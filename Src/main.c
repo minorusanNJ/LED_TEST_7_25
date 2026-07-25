@@ -6,6 +6,7 @@ int main(void)
 
 	while(1)
 	{
-		;
+		GPIOA->ODR	^=	ODRPA5;
+		for(int i=0; i<100000; i++);
 	}
 }
